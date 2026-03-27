@@ -3,4 +3,7 @@ yfinance
 pandas
 openpyxl
 requests
-streamlit-pdf-viewer
+streamlit
+requests
+PyMuPDF
+Pillow
