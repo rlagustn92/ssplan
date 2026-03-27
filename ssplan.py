@@ -21,7 +21,7 @@ def load_pdf_as_image(url):
     page = doc.load_page(0) # 첫 번째 페이지 (0번 인덱스)
     
     # 3. 고화질 이미지로 변환 (해상도를 높이기 위해 2배 확대 설정)
-    zoom = 4.0 
+    zoom = 8.0 
     mat = fitz.Matrix(zoom, zoom)
     pix = page.get_pixmap(matrix=mat)
     
