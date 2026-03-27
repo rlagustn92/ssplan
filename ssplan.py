@@ -2,15 +2,15 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
-st.title("엑셀 원본 그대로 보기 테스트")
+st.title("실시간 선석운영계획 (PDF 뷰어)")
 
-# 구글 드라이브 공유 링크의 파일 ID
-file_id = "11ikddEKsE7U_A6SbpSsx4KzauAjSxohr"
+# 새로 동기화된 PDF 파일의 구글 드라이브 ID가 적용되었습니다.
+pdf_file_id = "11ikddEKsE7U_A6SbpSsx4KzauAjSxohr"
 
-# 엑셀 원본 모습을 그대로 보여주는 구글 드라이브 미리보기 URL
-preview_url = f"https://drive.google.com/file/d/{file_id}/preview"
+# PDF 미리보기 URL
+preview_url = f"https://drive.google.com/file/d/{pdf_file_id}/preview"
 
-st.write("구글 드라이브에 올라간 엑셀 원본 서식 그대로 출력됩니다.")
+st.write("로컬 PC에서 실시간으로 변환된 PDF 화면입니다.")
 
-# iframe을 이용해 웹페이지 안에 구글 드라이브 뷰어를 삽입
+# iframe으로 PDF 뷰어 삽입
 components.iframe(preview_url, width=1200, height=800)
